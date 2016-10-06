@@ -1,0 +1,41 @@
+.ig{
+  &__videos{
+    position: relative;
+    &--fall{
+      background: url('http://larshanson219.github.io/img/video-fall.jpg');
+      background-size:cover;
+      height: auto;
+      min-height: 450px;
+      width: auto;
+    }
+    &--summer{
+      background: url('http://larshanson219.github.io/img/video-summer.jpg');
+      background-size:cover;
+      height: auto;
+      min-height: 450px;
+      width: auto;
+    }
+    &--overlay{
+      &:after{
+        background: rgba(0,0,0,0.75);
+        position: absolute;
+        content: ' ';
+        top: 0; left: 0; right: 0; bottom: 0;
+      }
+    }
+    &__play{
+      cursor: pointer;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 0; top: 50%; right: 0; bottom: 0;
+      transform: translateY(-50%);
+      margin: 0 auto;
+      z-index: +1;
+    }
+    &__youtube{
+      z-index: +2;
+      display: none;
+    }
+  }
+}

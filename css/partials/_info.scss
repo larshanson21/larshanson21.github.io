@@ -1,0 +1,149 @@
+.ig{
+  &__info{
+    &--coaches{
+      display: none;
+      font-size: 1.2em;
+      color: $white !important;
+      background: transparent;
+    }
+    position: relative;
+    background: $lighest-gray;
+    &--reverse{
+      background: $light-gray;
+    }
+    padding: 4rem 1rem;
+    @include mobile{
+      padding: 4rem 1rem;
+    }
+    &__register{
+      position: relative;
+      padding: 8em 2em 4em 2em;
+      background: white;
+      display: none;
+      &__cta{
+        cursor: pointer;
+        position: absolute;
+        bottom: -25px;
+        margin: 0 auto;
+        left: 0; right: 0;
+        width: 120px;
+        font-family: "industry";
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $white;
+        background: $blue;
+        padding: 1em 2em;
+        z-index: +1;
+
+      }
+    }
+    &__container{
+      &--reverse{
+        flex-direction: row-reverse;
+        @include phone{
+          flex-direction: column;
+        }
+      }
+      display: flex;
+      flex-direction: row;
+      @include phone{
+        flex-direction: column;
+      }
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h3{
+      font-family: "industry";
+      font-style: italic;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &__heading{
+      width: 20%;
+      border-right: solid 2px $dark-gray;
+      &--reverse{
+        border-left: solid 2px $dark-gray;
+        border-right: none;
+      }
+      &--coaches{
+        border-right: solid 2px $white;
+        @include phone{
+          border-right: none;
+          border-left: none;
+        }
+      }
+      align-self: flex-start;
+      margin-top: 2rem;
+      padding: 2rem;
+      @include phone{
+        width: 100%;
+        justify-content: center;
+        border-right: none;
+        border-left: none;
+        // border-bottom: solid 2px $dark-gray;
+        padding: 0;
+        margin-top: 0;
+      }
+      &__copy{
+        &--coaches{
+          color: $white;
+          font-size: 1.2em;
+        }
+        font-weight: 200;
+        color: $dark-gray;
+        font-family: "industry";
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        @include phone{
+          text-align: center;
+        }
+      }
+    }
+    &__content{
+      font-family: "acumin-pro",sans-serif;
+      width: 80%;
+      @include phone{
+        width: 100%;
+      }
+      &__list{
+        padding: 0em 2em 2em 2em;
+        &__item{
+          font-weight: 200;
+          list-style: none;
+          color: lighten($dark-gray, 30%);
+        }
+      }
+      &__copy{
+        font-weight: 200;
+        padding: 2rem 2rem 0 2rem;
+      }
+      &__table{
+        font-weight: 200;
+        margin: 2rem;
+        @include phone{
+          margin: 2rem 0 0 0;
+        }
+      }
+    }
+    &__table{
+      font-family: "acumin-pro",sans-serif;
+      font-weight: 200;
+      padding: 2rem;
+      border-collapse: collapse;
+      width: 100%;
+      tr{
+        background: white;
+        &:nth-child(odd){
+          background: $lighest-gray;
+        }
+        td{
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+$mobile: "767px";
+$desktop-sm: "960px";
+$phone: "580px";
+
+//smaller than ipad
+@mixin mobile{
+  @media (min-width: 0) and (max-width: #{$mobile}){
+    @content;
+  }
+}
+
+//smaller than ipad
+@mixin desktop-sm{
+  @media (min-width: 0) and (max-width: #{$mobile}){
+    @content;
+  }
+}
+
+//smaller than ipad
+@mixin phone{
+  @media (min-width: 0) and (max-width: #{$phone}){
+    @content;
+  }
+}

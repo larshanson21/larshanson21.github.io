@@ -1,0 +1,125 @@
+.ig{
+  &__header{
+    position: relative;
+    height: 250px;
+    &__bg{
+      z-index: -1;
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: 0;
+      content: ' ';
+      background: url('http://larshanson219.github.io/img/background.jpg') no-repeat;
+      background-size: cover;
+      background-position: top right;
+      &:after{
+        position: absolute;
+        content: ' ';
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(0deg, $orange, transparentize($orange, 0.2));
+      }
+    }
+    &__meet{
+      opacity: 0.8;
+      cursor: pointer;
+      font-size: 0.8rem;
+      position: absolute;
+      top: 2rem;
+      right: calc(2rem + 44px); //+44 for the whistle
+      font-family: "industry";
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      color: $lime;
+      @include mobile{
+        width: 200px;
+      }
+      &:after{
+        content: ' ';
+        position: absolute;
+        top: -3px;
+        right: calc(-36px - 0.5rem );
+        background: url('http://larshanson219.github.io/img/whistle.svg');
+        height: 21px;
+        width: 36px;
+      }
+    }
+    &__logo{
+      height: 63px;
+      width: 218px;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-40%);
+      @media screen and (max-width: 1024px){
+        padding: 2rem;
+      }
+    }
+    &__container{
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    &__nav{
+      position: absolute;
+      bottom: -24px;
+      z-index: +1;
+    }
+    &__menu{
+      position: relative;
+      padding:0;
+      white-space: nowrap;
+      overflow-x: scroll;
+      max-width: 100vw;
+      height: 43px;
+      @include phone{
+        display: flex;
+      }
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      a{
+        &:link, &:visited, &:hover, &:active{
+          outline: none;
+          text-decoration: none;
+          color: $white;
+          @include phone{
+            width: calc(100vw/3);
+            text-align: center;
+          }
+        }
+      }
+      &__item{
+        width: auto;
+        font-size: 0.9rem;
+        position: relative;
+        min-width: 20px;
+        display: inline-block;
+        font-family: "industry";
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: $white;
+        padding: 0 2rem;
+        @include phone{
+          padding: 0 1rem;
+        }
+        transition: 0.3s ease-in-out;
+        &:hover{
+          transform: translateY(-3px);
+        }
+        &--active{
+          &:hover{
+            transform: translateY(0);
+          }
+          &:after{
+            position: absolute;
+            content: ' ';
+            height: 5px;
+            width: 100%;
+            left:0; right: 0; bottom: -19px; //calc border height
+            border-bottom: solid 5px $blue;
+          }
+        }
+      }
+    }
+  }
+}
