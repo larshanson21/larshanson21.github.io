@@ -4,6 +4,7 @@
     height: 100%;
     display: none;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     background: $dark-gray;
     top: 0;
     bottom:0;
@@ -17,6 +18,7 @@
       z-index: +3;
       width: 100%;
       overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
       white-space: nowrap;
       display: -webkit-flex;
       display: flex;

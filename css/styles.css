@@ -325,6 +325,7 @@ a:link, a:hover, a:active {
   height: 100%;
   display: none;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background: #3A3E41;
   top: 0;
   bottom: 0;
@@ -338,6 +339,7 @@ a:link, a:hover, a:active {
     z-index: +3;
     width: 100%;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     white-space: nowrap;
     display: -webkit-flex;
     display: flex; }
