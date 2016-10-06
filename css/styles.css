@@ -52,7 +52,7 @@ a:link, a:hover, a:active {
     top: 0;
     bottom: 0;
     content: ' ';
-    background: url("http://larshanson219.github.io/img/background.jpg") no-repeat;
+    background: url("http://larshanson21.github.io/img/background.jpg") no-repeat;
     background-size: cover;
     background-position: top right; }
     .ig__header__bg:after {
@@ -84,7 +84,7 @@ a:link, a:hover, a:active {
       position: absolute;
       top: -3px;
       right: calc(-36px - 0.5rem );
-      background: url("http://larshanson219.github.io/img/whistle.svg");
+      background: url("http://larshanson21.github.io/img/whistle.svg");
       height: 21px;
       width: 36px; }
   .ig__header__logo {
@@ -328,13 +328,13 @@ a:link, a:hover, a:active {
 .ig__videos {
   position: relative; }
   .ig__videos--fall {
-    background: url("http://larshanson219.github.io/img/video-fall.jpg");
+    background: url("http://larshanson21.github.io/img/video-fall.jpg");
     background-size: cover;
     height: auto;
     min-height: 450px;
     width: auto; }
   .ig__videos--summer {
-    background: url("http://larshanson219.github.io/img/video-summer.jpg");
+    background: url("http://larshanson21.github.io/img/video-summer.jpg");
     background-size: cover;
     height: auto;
     min-height: 450px;
