@@ -68,6 +68,8 @@
       white-space: nowrap;
       max-width: 100vw;
       height: 43px;
+      overflow-x: -moz-hidden-unscrollable;
+      overflow-y: -moz-hidden-unscrollable;
       @include mobile{
         overflow-x: scroll;
       }
