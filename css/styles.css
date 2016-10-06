@@ -180,6 +180,7 @@ a:link, a:hover, a:active {
     .ig__info__prices__price {
       -webkit-flex: 1;
       flex: 1;
+      width: 50%;
       font-family: "industry";
       font-style: italic;
       font-weight: 600;
@@ -410,54 +411,43 @@ a:link, a:hover, a:active {
     display: none; }
 
 .ig__footer {
-  padding: 2em;
-  background: #E6E7E8;
+  padding: 4em 2em;
+  background: #3A3E41;
   font-family: "acumin-pro",sans-serif;
   font-weight: 200;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  color: #FFFFFF; }
   @media (min-width: 0) and (max-width: 767px) {
     .ig__footer {
-      -webkit-flex-direction: column;
-      flex-direction: column; } }
-  .ig__footer__contact {
-    padding: 0;
-    margin: 0; }
-    @media (min-width: 0) and (max-width: 580px) {
-      .ig__footer__contact {
-        justify-content: center;
-        margin-bottom: 2em; } }
-    .ig__footer__contact__item {
-      display: inline;
-      margin-right: 0.5em; }
-      @media (min-width: 0) and (max-width: 580px) {
-        .ig__footer__contact__item {
-          display: block;
-          text-align: center; } }
-      .ig__footer__contact__item:first-child {
-        font-weight: 600; }
-      .ig__footer__contact__item:last-child {
-        margin-right: 0; }
-      .ig__footer__contact__item a:link, .ig__footer__contact__item a:active, .ig__footer__contact__item a:visited {
-        color: #3A3E41; }
+      display: block; } }
   .ig__footer__info {
-    -webkit-flex: 1 50%;
-    flex: 1 50%; }
-  .ig__footer__social {
-    -webkit-flex: 1 50%;
-    flex: 1 50%;
-    text-align: right; }
-    @media (min-width: 0) and (max-width: 580px) {
-      .ig__footer__social {
-        text-align: center; } }
-    .ig__footer__social a:link, .ig__footer__social a:hover, .ig__footer__social a:active {
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    width: 100%;
+    text-align: center; }
+    .ig__footer__info h3 {
+      font-family: "industry";
+      font-style: italic;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0; }
+    .ig__footer__info a:link, .ig__footer__info a:hover, .ig__footer__info a:active, .ig__footer__info a:visited {
       outline: none;
       border: none;
-      cursor: pointer; }
-    .ig__footer__social svg {
+      cursor: pointer;
+      color: #FFFFFF;
+      text-decoration: none; }
+    .ig__footer__info svg {
       height: 20px;
-      width: 20px; }
+      width: 20px;
+      fill: white; }
+    @media (min-width: 0) and (max-width: 767px) {
+      .ig__footer__info {
+        margin-bottom: 2em; }
+        .ig__footer__info:last-child {
+          margin-bottom: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

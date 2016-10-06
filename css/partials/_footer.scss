@@ -1,65 +1,49 @@
 .ig{
   &__footer{
-    padding: 2em;
-    background: $light-gray;
+    padding: 4em 2em;
+    background: $dark-gray;
     font-family: "acumin-pro",sans-serif;
     font-weight: 200;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+    color: $white;
     @include mobile{
-      -webkit-flex-direction: column;
-      flex-direction: column;
+      display: block;
     }
-    &__contact{
-      padding: 0;
-      margin: 0;
-      @include phone{
-        justify-content: center;
-        margin-bottom: 2em;
-      }
-      &__item{
-        display: inline;
-        @include phone{
-          display: block;
-          text-align: center;
-        }
-        margin-right: 0.5em;
-        &:first-child{
-          font-weight: 600;
-        }
-        &:last-child{
-          margin-right: 0;
-        }
-        a{
-          &:link, &:active, &:visited{
-            color: $dark-gray;
-          }
-        }
-      }
-    }
+
     &__info{
-      -webkit-flex: 1 50%;
-      flex: 1 50%;
-    }
-    &__social{
-      -webkit-flex: 1 50%;
-      flex: 1 50%;
-      text-align: right;
-      @include phone{
-        text-align: center;
+      -webkit-flex: 1 100%;
+      flex: 1 100%;
+      width: 100%;
+      text-align: center;
+      h3{
+        font-family: "industry";
+        font-style: italic;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0;
       }
       a{
-        &:link, &:hover, &:active{
+        &:link, &:hover, &:active, &:visited{
           outline: none;
           border: none;
           cursor: pointer;
+          color: $white;
+          text-decoration: none;
         }
       }
       svg{
         height: 20px;
         width: 20px;
+        fill: white;
+      }
+      @include mobile{
+        margin-bottom: 2em;
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
   }
