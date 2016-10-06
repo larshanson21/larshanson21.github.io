@@ -74,6 +74,7 @@
         overflow-x: scroll;
       }
       @include phone{
+        display: -webkit-flex;
         display: flex;
       }
       &::-webkit-scrollbar {

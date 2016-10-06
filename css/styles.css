@@ -119,6 +119,7 @@ a:link, a:hover, a:active {
         overflow-x: scroll; } }
     @media (min-width: 0) and (max-width: 580px) {
       .ig__header__menu {
+        display: -webkit-flex;
         display: flex; } }
     .ig__header__menu::-webkit-scrollbar {
       display: none; }
@@ -166,14 +167,18 @@ a:link, a:hover, a:active {
   background: #F1F2F2;
   padding: 4rem 1rem; }
   .ig__info__prices {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     padding: 0 0 2em 2em;
     max-width: 400px; }
     @media (min-width: 0) and (max-width: 580px) {
       .ig__info__prices {
+        -webkit-flex-direction: column;
         flex-direction: column; } }
     .ig__info__prices__price {
+      -webkit-flex: 1;
       flex: 1;
       font-family: "industry";
       font-style: italic;
@@ -220,17 +225,22 @@ a:link, a:hover, a:active {
       padding: 1em 2em;
       z-index: +1; }
   .ig__info__container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     max-width: 960px;
     margin: 0 auto; }
     .ig__info__container--reverse {
+      -webkit-flex-direction: row-reverse;
       flex-direction: row-reverse; }
       @media (min-width: 0) and (max-width: 580px) {
         .ig__info__container--reverse {
+          -webkit-flex-direction: column;
           flex-direction: column; } }
     @media (min-width: 0) and (max-width: 580px) {
       .ig__info__container {
+        -webkit-flex-direction: column;
         flex-direction: column; } }
   .ig__info h3 {
     font-family: "industry";
@@ -240,6 +250,7 @@ a:link, a:hover, a:active {
   .ig__info__heading {
     width: 20%;
     border-right: solid 2px #3A3E41;
+    align-self: -webkit-flex-start;
     align-self: flex-start;
     margin-top: 2rem;
     padding: 2rem; }
@@ -328,11 +339,14 @@ a:link, a:hover, a:active {
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
+    display: -webkit-flex;
     display: flex; }
     .ig__coaches__profiles::-webkit-scrollbar {
       display: none; }
     .ig__coaches__profiles__coach-container {
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-flow: row;
       flex-flow: row;
       position: relative;
       white-space: nowrap;
@@ -398,10 +412,13 @@ a:link, a:hover, a:active {
   background: #E6E7E8;
   font-family: "acumin-pro",sans-serif;
   font-weight: 200;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row; }
   @media (min-width: 0) and (max-width: 767px) {
     .ig__footer {
+      -webkit-flex-direction: column;
       flex-direction: column; } }
   .ig__footer__contact {
     padding: 0;
@@ -424,8 +441,10 @@ a:link, a:hover, a:active {
       .ig__footer__contact__item a:link, .ig__footer__contact__item a:active, .ig__footer__contact__item a:visited {
         color: #3A3E41; }
   .ig__footer__info {
+    -webkit-flex: 1 50%;
     flex: 1 50%; }
   .ig__footer__social {
+    -webkit-flex: 1 50%;
     flex: 1 50%;
     text-align: right; }
     @media (min-width: 0) and (max-width: 580px) {

@@ -1,14 +1,18 @@
 .ig{
   &__info{
     &__prices{
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-direction: row;
       flex-direction: row;
       padding: 0 0 2em 2em;
       max-width: 400px;
       @include phone{
+        -webkit-flex-direction: column;
         flex-direction: column;
       }
       &__price{
+        -webkit-flex: 1;
         flex: 1;
         font-family: "industry";
         font-style: italic;
@@ -68,14 +72,19 @@
     }
     &__container{
       &--reverse{
+        -webkit-flex-direction: row-reverse;
         flex-direction: row-reverse;
         @include phone{
+          -webkit-flex-direction: column;
           flex-direction: column;
         }
       }
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-direction: row;
       flex-direction: row;
       @include phone{
+        -webkit-flex-direction: column;
         flex-direction: column;
       }
       max-width: 960px;
@@ -101,6 +110,7 @@
           border-left: none;
         }
       }
+      align-self: -webkit-flex-start;
       align-self: flex-start;
       margin-top: 2rem;
       padding: 2rem;

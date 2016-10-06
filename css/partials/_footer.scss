@@ -4,9 +4,12 @@
     background: $light-gray;
     font-family: "acumin-pro",sans-serif;
     font-weight: 200;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
     @include mobile{
+      -webkit-flex-direction: column;
       flex-direction: column;
     }
     &__contact{
@@ -37,9 +40,11 @@
       }
     }
     &__info{
+      -webkit-flex: 1 50%;
       flex: 1 50%;
     }
     &__social{
+      -webkit-flex: 1 50%;
       flex: 1 50%;
       text-align: right;
       @include phone{

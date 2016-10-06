@@ -18,12 +18,15 @@
       width: 100%;
       overflow-x: scroll;
       white-space: nowrap;
+      display: -webkit-flex;
       display: flex;
       &::-webkit-scrollbar {
           display: none;
       }
       &__coach-container{
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-flow: row;
         flex-flow: row;
         position: relative;
         white-space: nowrap;
