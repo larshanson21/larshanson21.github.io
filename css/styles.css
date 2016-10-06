@@ -3,6 +3,9 @@ html, body {
   padding: 0;
   height: 100%; }
 
+html {
+  overflow: -moz-scrollbars-none; }
+
 body {
   margin: 0 auto;
   font-size: 16px;
@@ -52,7 +55,7 @@ a:link, a:hover, a:active {
     top: 0;
     bottom: 0;
     content: ' ';
-    background: url("https://larshanson21.github.io/img/background.jpg") no-repeat;
+    background: url("http://igniteyourgame.org/img/background.jpg") no-repeat;
     background-size: cover;
     background-position: top right; }
     .ig__header__bg:after {
@@ -84,7 +87,7 @@ a:link, a:hover, a:active {
       position: absolute;
       top: -3px;
       right: calc(-36px - 0.5rem );
-      background: url("https://larshanson21.github.io/img/whistle.svg");
+      background: url("http://igniteyourgame.org/img/whistle.svg");
       height: 21px;
       width: 36px; }
   .ig__header__logo {
@@ -107,9 +110,11 @@ a:link, a:hover, a:active {
     position: relative;
     padding: 0;
     white-space: nowrap;
-    overflow-x: scroll;
     max-width: 100vw;
     height: 43px; }
+    @media (min-width: 0) and (max-width: 767px) {
+      .ig__header__menu {
+        overflow-x: scroll; } }
     @media (min-width: 0) and (max-width: 580px) {
       .ig__header__menu {
         display: flex; } }
@@ -158,6 +163,29 @@ a:link, a:hover, a:active {
   position: relative;
   background: #F1F2F2;
   padding: 4rem 1rem; }
+  .ig__info__prices {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 2em 2em;
+    max-width: 400px; }
+    @media (min-width: 0) and (max-width: 580px) {
+      .ig__info__prices {
+        flex-direction: column; } }
+    .ig__info__prices__price {
+      flex: 1;
+      font-family: "industry";
+      font-style: italic;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .ig__info__prices__price h3 {
+        color: #838b91; }
+      .ig__info__prices__price span {
+        color: #3A3E41; }
+      @media (min-width: 0) and (max-width: 580px) {
+        .ig__info__prices__price {
+          margin-bottom: 2em; }
+          .ig__info__prices__price:last-child {
+            margin-bottom: 0; } }
   .ig__info--coaches {
     display: none;
     font-size: 1.2em;
@@ -328,13 +356,13 @@ a:link, a:hover, a:active {
 .ig__videos {
   position: relative; }
   .ig__videos--fall {
-    background: url("https://larshanson21.github.io/img/video-fall.jpg");
+    background: url("http://igniteyourgame.org/img/video-fall.jpg");
     background-size: cover;
     height: auto;
     min-height: 450px;
     width: auto; }
   .ig__videos--summer {
-    background: url("https://larshanson21.github.io/img/video-summer.jpg");
+    background: url("http://igniteyourgame.org/img/video-summer.jpg");
     background-size: cover;
     height: auto;
     min-height: 450px;

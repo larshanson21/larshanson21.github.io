@@ -1,5 +1,33 @@
 .ig{
   &__info{
+    &__prices{
+      display: flex;
+      flex-direction: row;
+      padding: 0 0 2em 2em;
+      max-width: 400px;
+      @include phone{
+        flex-direction: column;
+      }
+      &__price{
+        flex: 1;
+        font-family: "industry";
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
+        h3{
+          color: lighten($dark-gray, 30%);
+        }
+        span{
+          color: $dark-gray;
+        }
+        @include phone{
+          margin-bottom: 2em;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
     &--coaches{
       display: none;
       font-size: 1.2em;

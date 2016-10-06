@@ -1,2 +1,2 @@
-# larshanson21.github.io
+# igniteyourgame.org
 Ignite Your Game Site
