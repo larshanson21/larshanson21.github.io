@@ -224,7 +224,17 @@ a:link, a:hover, a:active {
       color: #FFFFFF;
       background: #23BCBA;
       padding: 1em 2em;
-      z-index: +1; }
+      z-index: +1;
+      text-decoration: none;
+      outline: none;
+      color: #FFFFFF;
+      transition: background 0.3s ease-in-out; }
+      .ig__info__register__cta:visited, .ig__info__register__cta:link, .ig__info__register__cta:active, .ig__info__register__cta:hover {
+        text-decoration: none;
+        outline: none;
+        color: #FFFFFF; }
+      .ig__info__register__cta:hover {
+        background: #38dad8; }
   .ig__info__container {
     display: -webkit-flex;
     display: flex;

@@ -68,6 +68,18 @@
         background: $blue;
         padding: 1em 2em;
         z-index: +1;
+        text-decoration: none;
+        outline: none;
+        color: $white;
+        transition: background 0.3s ease-in-out;
+        &:visited, &:link, &:active, &:hover{
+          text-decoration: none;
+          outline: none;
+          color: $white;
+        }
+        &:hover{
+          background: lighten($blue, 10%);
+        }
 
       }
     }

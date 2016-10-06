@@ -10,10 +10,6 @@ $(document).ready(function(){
     // e.preventDefault();
   });
 
-  $('.ig__info__register__cta').click(function(){
-    $('.ig__info__register').slideToggle();
-  })
-
   $('.x-out').click(function(){
     $('.ig__coaches').fadeOut();
   })
