@@ -367,7 +367,8 @@ a:link, a:hover, a:active {
     .ig__coaches__profiles__coach {
       display: block;
       position: relative;
-      height: 150px;
+      height: auto;
+      max-height: 150px;
       width: 150px;
       margin: 1em;
       white-space: normal;
