@@ -73,9 +73,9 @@ a:link, a:hover, a:active {
     position: absolute;
     top: 2rem;
     right: calc(2rem + 44px);
-    font-family: "industry";
+    font-family: 'Ubuntu', sans-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: #ECE94A; }
@@ -137,8 +137,8 @@ a:link, a:hover, a:active {
       position: relative;
       min-width: 20px;
       display: inline-block;
-      font-family: "industry";
-      font-weight: 400;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
       font-style: italic;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
@@ -181,9 +181,9 @@ a:link, a:hover, a:active {
       -webkit-flex: 1;
       flex: 1;
       width: 50%;
-      font-family: "industry";
+      font-family: 'Ubuntu', sans-serif;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase; }
       .ig__info__prices__price h3 {
         color: #838b91; }
@@ -217,9 +217,9 @@ a:link, a:hover, a:active {
       left: 0;
       right: 0;
       width: 120px;
-      font-family: "industry";
+      font-family: 'Ubuntu', sans-serif;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
       color: #FFFFFF;
       background: #23BCBA;
@@ -254,9 +254,9 @@ a:link, a:hover, a:active {
         -webkit-flex-direction: column;
         flex-direction: column; } }
   .ig__info h3 {
-    font-family: "industry";
+    font-family: 'Ubuntu', sans-serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase; }
   .ig__info__heading {
     width: 20%;
@@ -285,9 +285,9 @@ a:link, a:hover, a:active {
     .ig__info__heading__copy {
       font-weight: 200;
       color: #3A3E41;
-      font-family: "industry";
+      font-family: 'Ubuntu', sans-serif;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
       font-size: 1.1rem; }
       .ig__info__heading__copy--coaches {
@@ -297,7 +297,7 @@ a:link, a:hover, a:active {
         .ig__info__heading__copy {
           text-align: center; } }
   .ig__info__content {
-    font-family: "acumin-pro",sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width: 80%; }
     @media (min-width: 0) and (max-width: 580px) {
       .ig__info__content {
@@ -318,8 +318,8 @@ a:link, a:hover, a:active {
         .ig__info__content__table {
           margin: 2rem 0 0 0; } }
   .ig__info__table {
-    font-family: "acumin-pro",sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     padding: 2rem;
     border-collapse: collapse;
     width: 100%; }
@@ -424,8 +424,8 @@ a:link, a:hover, a:active {
 .ig__footer {
   padding: 4em 2em;
   background: #3A3E41;
-  font-family: "acumin-pro",sans-serif;
-  font-weight: 200;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -440,9 +440,9 @@ a:link, a:hover, a:active {
     width: 100%;
     text-align: center; }
     .ig__footer__info h3 {
-      font-family: "industry";
+      font-family: 'Ubuntu', sans-serif;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 700;
       display: block;
       margin-bottom: 0; }
     .ig__footer__info a:link, .ig__footer__info a:hover, .ig__footer__info a:active, .ig__footer__info a:visited {

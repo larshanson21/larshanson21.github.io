@@ -2,8 +2,8 @@
   &__footer{
     padding: 4em 2em;
     background: $dark-gray;
-    font-family: "acumin-pro",sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -19,9 +19,9 @@
       width: 100%;
       text-align: center;
       h3{
-        font-family: "industry";
+        font-family: 'Ubuntu', sans-serif;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         display: block;
         margin-bottom: 0;
       }
