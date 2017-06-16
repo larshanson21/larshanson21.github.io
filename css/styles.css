@@ -91,11 +91,18 @@ a:link, a:hover, a:active {
       height: 21px;
       width: 36px; }
   .ig__header__logo {
-    height: 63px;
+    height: 75px;
     width: 218px;
     position: absolute;
     top: 40%;
     transform: translateY(-40%); }
+    .ig__header__logo__image {
+      height: 75px;
+      width: auto;
+      margin-left: 2rem; }
+      @media screen and (max-width: 1024px) {
+        .ig__header__logo__image {
+          margin-left: 0rem; } }
     @media screen and (max-width: 1024px) {
       .ig__header__logo {
         padding: 2rem; } }
@@ -330,6 +337,35 @@ a:link, a:hover, a:active {
       .ig__info__table tr td {
         padding: 20px;
         text-align: center; }
+.ig__toggle {
+  background: #F1F2F2;
+  padding: 4rem 1rem 2rem 1rem; }
+  .ig__toggle__container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+  .ig__toggle__item {
+    flex: 1;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out; }
+    .ig__toggle__item:hover {
+      transform: translateY(-2px);
+      cursor: pointer; }
+    .ig__toggle__item--active:after {
+      position: absolute;
+      content: ' ';
+      height: 5px;
+      width: 20%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: -2rem;
+      border-bottom: solid 3px #3A3E41; }
 
 .ig__coaches {
   position: fixed;

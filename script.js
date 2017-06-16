@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+
+  // kids & adults toggle
+  $('#js__kids').click(function(e){
+    $('#js__adults__content').hide();
+    $('#js__kids__content').show();
+    $('#js__kids').addClass('ig__toggle__item--active');
+    $('#js__adults').removeClass('ig__toggle__item--active');
+  });
+
+  $('#js__adults').click(function(e){
+    $('#js__kids__content').hide();
+    $('#js__adults__content').show();
+    $('#js__adults').addClass('ig__toggle__item--active');
+    $('#js__kids').removeClass('ig__toggle__item--active');
+  });
+
   $('.ig__videos__play').click(function(e){
     $(this).next().next().show();
     $(this).next().hide();
