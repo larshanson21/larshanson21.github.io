@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $('#js__adults__content').hide();
 
   // kids & adults toggle
   $('#js__kids').click(function(e){
