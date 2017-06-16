@@ -7,6 +7,13 @@ $(document).ready(function(){
     $('#js__kids__content').show();
     $('#js__kids').addClass('ig__toggle__item--active');
     $('#js__adults').removeClass('ig__toggle__item--active');
+
+    if($('#js__adults__content').is(':visible')){
+      $('#js__class__times').hide();
+    } else{
+      $('#js__class__times').show();
+    }
+
   });
 
   $('#js__adults').click(function(e){
@@ -14,6 +21,12 @@ $(document).ready(function(){
     $('#js__adults__content').show();
     $('#js__adults').addClass('ig__toggle__item--active');
     $('#js__kids').removeClass('ig__toggle__item--active');
+
+    if($('#js__adults__content').is(':visible')){
+      $('#js__class__times').hide();
+    } else{
+      $('#js__class__times').show();
+    }
   });
 
   $('.ig__videos__play').click(function(e){
