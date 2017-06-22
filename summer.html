@@ -24,27 +24,154 @@
     <section class="ig__header">
       <div class="ig__header__bg"></div>
         <div class="ig__header__container">
-          <span class="ig__header__logo">
-            <img class="ig__header__logo__image" src="http://igniteyourgame.org/img/logo.png"/>
-          </span>
+        <span class="ig__header__logo">
+          <img class="ig__header__logo__image" src="http://igniteyourgame.org/img/logo.png"/>
+        </span>
         <nav class="ig__header__nav">
           <ul class="ig__header__menu">
             <a href="http://igniteyourgame.org/spring.html"><li class="ig__header__menu__item">Spring<span class="mobile-hide"> Training</span></li></a>
-            <a href="http://igniteyourgame.org/summer.html"><li class="ig__header__menu__item">Summer <span class="mobile-hide">Camp</span></li></a>
-            <a href="http://igniteyourgame.org/index.html"><li class="ig__header__menu__item ig__header__menu__item--active">Fall <span class="mobile-hide">Training</span></li></a>
+            <a href="http://igniteyourgame.org/index.html"><li class="ig__header__menu__item ig__header__menu__item--active">Summer <span class="mobile-hide">Camp</span></li></a>
+            <a href="http://igniteyourgame.org/fall.html"><li class="ig__header__menu__item">Fall <span class="mobile-hide">Training</span></li></a>
           </ul>
         </nav>
       </div>
       <h2 class="ig__header__meet"><span class="mobile-hide">Meet The Coaches</span></h2>
     </section>
     <!-- INFO -->
-    <section class="ig__info">
+    <!-- toggle -->
+    <section class="ig__toggle">
+      <div class="ig__toggle__container">
+        <div class="ig__toggle__item ig__toggle__item--active" id="js__kids">Athletes</div>
+        <div class="ig__toggle__item" id="js__adults">Adults</div>
+      </div>
+    </section>
+    <!-- end toggle -->
 
-        <iframe src="https://app.acuityscheduling.com/schedule.php?owner=11443084&appointmentType=category:Ignite+Fall+Training+%28Athletes%29" width="100%" height="800" frameBorder="0"></iframe>
-        <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
+    <!-- kids -->
+    <section class="ig__info" id="js__kids__content">
+      <div class="ig__info__container">
+        <!--heading side-->
+        <div class="ig__info__heading">
+          <h2 class="ig__info__heading__copy">What To Expect</h2>
+        </div>
+        <!--content side-->
+        <div class="ig__info__content">
+          <div class="ig__info__content__copy">
+            <p>Ignite Your Game was founded with humble beginnings in 2007 when 12 youth athletes committed themselves to improving their speed, power, and agility every morning in the summer. Now, 10 years later, our camp has become one of the most well-known camps in the Kansas City area and serves 300 athletes annually. Our passionate coaches and athletes maintain a fun & positive workout atmosphere.</p>
+            <p>We utilize a variety of dynamic movements, strength-training exercises, technique drills, and film studies to help athletes reach their fullest potential. We train athletes of all ages to push their limits, stay disciplined, and strive for their goals on and off the court/field. We hope to have the privilege of working with you this summer!</p>
+          </div>
+          <ul class="ig__info__content__list">
+            <li class="ig__info__content__list__item">- Classes are held Monday through Thursday every week (May 30 - July 27)</li>
+            <li class="ig__info__content__list__item">- All classes are 45 minutes in duration</li>
+            <li class="ig__info__content__list__item">- Workouts are held at the California Trail Middle School Track</li>
+          </ul>
+          <div class="ig__info__prices">
+            <div class="ig__info__prices__price">
+              <h3>New Athletes</h3>
+              <span>$295</span>
+            </div>
+            <div class="ig__info__prices__price">
+              <h3>Returning Participants</h3>
+              <span>$265</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="ig__info__register__cta" href="http://igniteyourgame.org/register-summer.html">Register Now</a>
 
     </section>
 
+    <!-- adults -->
+    <section class="ig__info" id="js__adults__content">
+      <div class="ig__info__container">
+        <!--heading side-->
+        <div class="ig__info__heading">
+          <h2 class="ig__info__heading__copy">What To Expect</h2>
+        </div>
+        <!--content side-->
+        <div class="ig__info__content">
+          <div class="ig__info__content__copy">
+            <p>Adult classes utilize a well-balanced workout plan to help build lean muscle mass. The exercises can be custom-tailored to accommodate your needs (prior injuries, skill level, strength, etc.)</p>
+            <p>Adults are encouraged to register for 2 different time slots each week if their schedules permit.</p>
+          </div>
+          <ul class="ig__info__content__list">
+            <li class="ig__info__content__list__item">- All workouts are 45 minutes in duration.</li>
+            <li class="ig__info__content__list__item">- Participants attend workouts once per week for 8 weeks. We encourage adults to register for two classes per week if their schedules permit.</li>
+            <li class="ig__info__content__list__item">- Numerous make-up opportunities are offered to help accommodate for absences</li>
+            <li class="ig__info__content__list__item">- Workouts are held at the Ignite Gym located at 14138 W 135th St. Olathe, KS 66062</li>
+
+          </ul>
+          <div class="ig__info__prices">
+            <div class="ig__info__prices__price">
+              <h3>New Participants</h3>
+              <span>$135</span>
+            </div>
+            <div class="ig__info__prices__price">
+              <h3>Returning Participants</h3>
+              <span>$115</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="ig__info__register__cta" href="http://igniteyourgame.org/register-summer.html">Register Now</a>
+
+    </section>
+
+    <!-- Register -->
+    <div class="ig__info__register">
+      <iframe src="https://app.acuityscheduling.com/schedule.php?owner=11443084&appointmentType=category:Summer+Camp" width="100%" height="800" frameBorder="0"></iframe>
+      <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
+    </div>
+
+    <!-- TIMES -->
+    <section class="ig__info ig__info--reverse" id="js__class__times">
+      <div class="ig__info__container ig__info__container--reverse">
+        <!--heading side-->
+        <div class="ig__info__heading ig__info__heading--reverse">
+          <h2 class="ig__info__heading__copy">Class Times</h2>
+        </div>
+        <!--content side-->
+        <div class="ig__info__content">
+          <div class="ig__info__content__table">
+            <table class="ig__info__table">
+              <tr>
+                <td>7:30am</td>
+                <td>2-5 Grade</td>
+                <td>CO-ED</td>
+              </tr>
+              <tr>
+                <td>8:15am</td>
+                <td>5-7 Grade</td>
+                <td>CO-ED</td>
+              </tr>
+              <tr>
+                <td>9:00am</td>
+                <td>7-9 Grade</td>
+                <td>BOYS</td>
+              </tr>
+              <tr>
+                <td>9:45am</td>
+                <td>7-12 Grade</td>
+                <td>GIRLS</td>
+              </tr>
+              <tr>
+                <td>10:30am</td>
+                <td>9-12 Grade</td>
+                <td>BOYS</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- VIDEOS -->
+    <section class="ig__videos ig__videos--overlay">
+      <svg class="ig__videos__play" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 105.3 105.3"><circle fill="none" stroke="#FFF" stroke-width="1.117" stroke-miterlimit="10" cx="52.6" cy="52.6" r="50.4"/><path fill="#FFF" d="M43.1 52.5V36l14.3 8.3 14.3 8.2-14.3 8.3L43.1 69"/></svg>
+      <div class="ig__videos--summer"></div>
+      <iframe class="ig__videos__youtube" width="100%" height="500px" src="https://www.youtube.com/embed/0ajyUZsTRvk" frameborder="0" allowfullscreen></iframe>
+    </section>
 
     <!-- FOOTER -->
     <section class="ig__footer">
@@ -62,7 +189,7 @@
       <div class="ig__footer__info">
         <h3>Location</h3>
         <span>
-          15465 S. Sturgeon Dr.</br>
+          California Trail Middle School</br>
           Olathe, KS 66062
         </span>
       </div>
