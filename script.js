@@ -7,8 +7,8 @@ $(document).ready(function(){
     $('#js__kids__content').show();
     $('#js__kids').addClass('ig__toggle__item--active');
     $('#js__adults').removeClass('ig__toggle__item--active');
-    $("a#js__register__link").attr("href", "http://igniteyourgame.org/register-fall.html");
-
+    $(".js__register__link").attr("href", "http://igniteyourgame.org/register-fall.html");
+    console.log($(".js__register__link"));
     if($('#js__adults__content').is(':visible')){
       $('#js__class__times').hide();
     } else{
@@ -22,7 +22,8 @@ $(document).ready(function(){
     $('#js__adults__content').show();
     $('#js__adults').addClass('ig__toggle__item--active');
     $('#js__kids').removeClass('ig__toggle__item--active');
-    $("a#js__register__link").attr("href", "http://igniteyourgame.org/register-fall-adults.html");
+    $(".js__register__link").attr("href", "http://igniteyourgame.org/register-fall-adults.html");
+    console.log($(".js__register__link"));
 
     if($('#js__adults__content').is(':visible')){
       $('#js__class__times').hide();
